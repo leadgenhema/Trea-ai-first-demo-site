@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Agency - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-blue-600">MarketPro</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600 transition duration-300">Home</a>
+                    <a href="portfolio.html" class="text-blue-600 font-medium">Portfolio</a>
+                    <a href="about.html" class="text-gray-600 hover:text-blue-600 transition duration-300">About</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-blue-600 transition duration-300">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-blue-600 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden mt-3 pb-2">
+                <a href="index.html" class="block py-2 text-gray-600 hover:text-blue-600 transition duration-300">Home</a>
+                <a href="portfolio.html" class="block py-2 text-blue-600 font-medium">Portfolio</a>
+                <a href="about.html" class="block py-2 text-gray-600 hover:text-blue-600 transition duration-300">About</a>
+                <a href="contact.html" class="block py-2 text-gray-600 hover:text-blue-600 transition duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="bg-blue-600 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold mb-4">Our Portfolio</h1>
+            <p class="text-xl max-w-2xl mx-auto">Explore our successful marketing campaigns and projects that have helped businesses achieve their goals.</p>
+        </div>
+    </header>
+
+    <!-- Portfolio Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <!-- Filter Tabs -->
+            <div class="flex flex-wrap justify-center mb-12">
+                <button class="portfolio-filter-btn active mx-2 my-2 px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300" data-filter="all">All</button>
+                <button class="portfolio-filter-btn mx-2 my-2 px-6 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300 transition duration-300" data-filter="lead-gen">Lead Generation</button>
+                <button class="portfolio-filter-btn mx-2 my-2 px-6 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300 transition duration-300" data-filter="consulting">Consulting</button>
+                <button class="portfolio-filter-btn mx-2 my-2 px-6 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300 transition duration-300" data-filter="auditing">Auditing</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-md" data-category="lead-gen">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Project 1" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold mb-3">Lead Generation</span>
+                        <h3 class="text-xl font-bold mb-2">TechStart Lead Campaign</h3>
+                        <p class="text-gray-600 mb-4">Increased qualified leads by 150% through targeted digital marketing and conversion-optimized landing pages.</p>
+                        <a href="#" class="text-blue-600 font-medium hover:text-blue-800 transition duration-300">View Case Study <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-md" data-category="consulting">
+                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Project 2" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold mb-3">Consulting</span>
+                        <h3 class="text-xl font-bold mb-2">Global Solutions Strategy</h3>
+                        <p class="text-gray-600 mb-4">Developed a comprehensive nurturing strategy that increased customer retention by 40% within 6 months.</p>
+                        <a href="#" class="text-blue-600 font-medium hover:text-blue-800 transition duration-300">View Case Study <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-md" data-category="auditing">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Project 3" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold mb-3">Auditing</span>
+                        <h3 class="text-xl font-bold mb-2">Bright Ideas Conversion Audit</h3>
+                        <p class="text-gray-600 mb-4">Identified critical funnel gaps and implemented solutions that improved conversion rates by 75%.</p>
+                        <a href="#" class="text-blue-600 font-medium hover:text-blue-800 transition duration-300">View Case Study <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 4 -->
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-md" data-category="lead-gen">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Project 4" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold mb-3">Lead Generation</span>
+                        <h3 class="text-xl font-bold mb-2">EcoFriendly Products Campaign</h3>
+                        <p class="text-gray-600 mb-4">Created a multi-channel lead generation strategy that resulted in 200% ROI within the first quarter.</p>
+                        <a href="#" class="text-blue-600 font-medium hover:text-blue-800 transition duration-300">View Case Study <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 5 -->
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-md" data-category="consulting">
+                    <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Project 5" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold mb-3">Consulting</span>
+                        <h3 class="text-xl font-bold mb-2">HealthTech Marketing Strategy</h3>
+                        <p class="text-gray-600 mb-4">Developed a content strategy that established the client as an industry thought leader, increasing engagement by 85%.</p>
+                        <a href="#" class="text-blue-600 font-medium hover:text-blue-800 transition duration-300">View Case Study <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 6 -->
+                <div class="portfolio-item bg-white rounded-lg overflow-hidden shadow-md" data-category="auditing">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Project 6" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-semibold mb-3">Auditing</span>
+                        <h3 class="text-xl font-bold mb-2">Financial Services UX Audit</h3>
+                        <p class="text-gray-600 mb-4">Conducted a comprehensive user experience audit that led to a 60% increase in application completion rates.</p>
+                        <a href="#" class="text-blue-600 font-medium hover:text-blue-800 transition duration-300">View Case Study <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-blue-600 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Transform Your Marketing?</h2>
+            <p class="text-xl max-w-2xl mx-auto mb-8">Let's discuss how our proven strategies can help your business achieve similar results.</p>
+            <a href="contact.html" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300 inline-block">Contact Us Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">MarketPro</h3>
+                    <p class="text-gray-400">Transforming businesses through strategic marketing solutions.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white transition duration-300">Portfolio</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">About</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Lead Generation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Consulting</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Auditing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2"></i>
+                            <span>123 Marketing St, Business City, 10001</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-2"></i>
+                            <span>info@marketpro.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone mt-1 mr-2"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                    </ul>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 MarketPro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

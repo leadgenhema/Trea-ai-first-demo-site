@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Agency - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-blue-600">MarketPro</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-blue-600 font-medium">Home</a>
+                    <a href="portfolio.html" class="text-gray-600 hover:text-blue-600 transition duration-300">Portfolio</a>
+                    <a href="about.html" class="text-gray-600 hover:text-blue-600 transition duration-300">About</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-blue-600 transition duration-300">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-blue-600 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden mt-3 pb-2">
+                <a href="index.html" class="block py-2 text-blue-600 font-medium">Home</a>
+                <a href="portfolio.html" class="block py-2 text-gray-600 hover:text-blue-600 transition duration-300">Portfolio</a>
+                <a href="about.html" class="block py-2 text-gray-600 hover:text-blue-600 transition duration-300">About</a>
+                <a href="contact.html" class="block py-2 text-gray-600 hover:text-blue-600 transition duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Transform Your Business with Strategic Marketing</h1>
+                    <p class="text-xl mb-8">We help businesses grow through data-driven marketing strategies that deliver measurable results.</p>
+                    <a href="contact.html" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300 inline-block">Get Started</a>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Marketing Strategy" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Why Choose Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md text-center">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Data-Driven Approach</h3>
+                    <p class="text-gray-600">We base all our strategies on solid data analysis, ensuring measurable results and continuous improvement.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md text-center">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Expert Team</h3>
+                    <p class="text-gray-600">Our team consists of industry veterans with proven track records in delivering exceptional marketing results.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md text-center">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Rapid Implementation</h3>
+                    <p class="text-gray-600">We move quickly from strategy to execution, helping you see results faster than traditional agencies.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md text-center">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Customized Solutions</h3>
+                    <p class="text-gray-600">Every business is unique. We tailor our strategies to your specific goals, industry, and target audience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Lead Generation</h3>
+                    <p class="text-gray-600 mb-4">We create powerful conversion strategies that turn visitors into qualified leads for your business.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 text-blue-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Conversion-focused landing pages</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 text-blue-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Targeted ad campaigns</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 text-blue-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Lead qualification systems</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Consulting</h3>
+                    <p class="text-gray-600 mb-4">Our expert consultants help you develop effective nurturing strategies to build lasting customer relationships.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 text-blue-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Customer journey mapping</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 text-blue-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Email marketing sequences</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 text-blue-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Content strategy development</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Auditing</h3>
+                    <p class="text-gray-600 mb-4">We analyze your current marketing efforts and provide strategies to increase show-up rates and conversions.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 text-blue-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Conversion rate optimization</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 text-blue-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>User experience analysis</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-5 w-5 text-blue-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span>Competitor benchmarking</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why We Are Best Section -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Why We Are Best in the Industry</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="flex flex-col items-center text-center">
+                    <div class="bg-white text-blue-600 rounded-full p-4 mb-4">
+                        <i class="fas fa-trophy text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Award-Winning</h3>
+                    <p>Recognized excellence in marketing innovation and results</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <div class="bg-white text-blue-600 rounded-full p-4 mb-4">
+                        <i class="fas fa-chart-bar text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Results-Driven</h3>
+                    <p>Focused on metrics that matter to your bottom line</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <div class="bg-white text-blue-600 rounded-full p-4 mb-4">
+                        <i class="fas fa-handshake text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Client Partnership</h3>
+                    <p>We succeed when you succeed - true collaborative approach</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <div class="bg-white text-blue-600 rounded-full p-4 mb-4">
+                        <i class="fas fa-lightbulb text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Innovative Strategies</h3>
+                    <p>Cutting-edge approaches that keep you ahead of competitors</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-slide bg-gray-50 p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Client" class="w-16 h-16 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Sarah Johnson</h4>
+                            <p class="text-gray-600">CEO, TechStart Inc.</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"Working with MarketPro transformed our lead generation process. We've seen a 150% increase in qualified leads within just 3 months of implementing their strategies."</p>
+                    <div class="text-yellow-500 mt-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-slide bg-gray-50 p-8 rounded-lg shadow-md hidden">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Client" class="w-16 h-16 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Michael Chen</h4>
+                            <p class="text-gray-600">Marketing Director, Global Solutions</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"The audit they conducted revealed critical gaps in our marketing funnel. After implementing their recommendations, our conversion rate improved by 75%."</p>
+                    <div class="text-yellow-500 mt-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-slide bg-gray-50 p-8 rounded-lg shadow-md hidden">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Client" class="w-16 h-16 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Emily Rodriguez</h4>
+                            <p class="text-gray-600">Founder, Bright Ideas Co.</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"Their consulting services helped us develop a nurturing strategy that increased our customer retention by 40%. The ROI has been incredible."</p>
+                    <div class="text-yellow-500 mt-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center mt-8 space-x-2">
+                <button class="testimonial-dot active w-3 h-3 rounded-full bg-blue-600"></button>
+                <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300"></button>
+                <button class="testimonial-dot w-3 h-3 rounded-full bg-gray-300"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription Form -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="max-w-xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6">Stay Updated with Marketing Trends</h2>
+                <p class="text-gray-600 mb-8">Subscribe to our newsletter for the latest marketing insights and tips.</p>
+                <form id="subscription-form" class="flex flex-col md:flex-row gap-4">
+                    <input type="email" id="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                    <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300">Subscribe</button>
+                </form>
+                <div id="subscription-message" class="mt-4 hidden"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">MarketPro</h3>
+                    <p class="text-gray-400">Transforming businesses through strategic marketing solutions.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="portfolio.html" class="text-gray-400 hover:text-white transition duration-300">Portfolio</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition duration-300">About</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Lead Generation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Consulting</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Auditing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2"></i>
+                            <span>123 Marketing St, Business City, 10001</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-2"></i>
+                            <span>info@marketpro.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone mt-1 mr-2"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                    </ul>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 MarketPro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
